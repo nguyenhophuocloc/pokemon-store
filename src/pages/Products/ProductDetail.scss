@@ -1,0 +1,166 @@
+/*Detail page*/
+@import "../../components/GlobalStyle/mixins";
+
+.detail {
+  &__body {
+    margin-top: var(--header-height);
+    padding-top: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+
+    @include Responsive(smartPhone) {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    width: 50%;
+    @include Responsive(smartPhone) {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    width: 50%;
+    @include Responsive(smartPhone) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__name {
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 3rem;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+}
+
+.attribute {
+  min-height: 243px;
+  max-width: 350px;
+  background-color: #30a7d7;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include Responsive(smartPhone) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__left,
+  &__right {
+    width: 50%;
+
+    @include Responsive(smartPhone) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 2rem 2rem 1.5rem 2rem;
+  }
+
+  &__value {
+    font-size: 1.6rem;
+    margin: 1.5rem 2rem 2rem 2rem;
+  }
+}
+
+.detail__btn {
+  border-radius: 10px;
+  font-size: 1.6rem;
+  margin-right: 4px;
+  padding: 6px 14px;
+
+  &--add,
+  &--go:hover {
+    background-color: #fff;
+    border: 1.5px solid #251414;
+    color: #000;
+    cursor: pointer;
+  }
+  &--go,
+  &--add:hover {
+    background-color: #000;
+    border: 1.5px solid #fff;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.abilities__name {
+  text-transform: capitalize;
+}
+
+.abilities__btn {
+  font-size: 1.6rem;
+  margin: 0.8rem 0rem 0rem 0.8rem;
+  white-space: normal;
+  word-break: break-word;
+  background: #30a7d7;
+  border-radius: 16px;
+  border: 1.5px solid #fff;
+  font-weight: bold;
+
+  color: whitesmoke;
+  height: 2rem;
+  width: 2rem;
+  outline: none;
+  &:hover {
+    background: whitesmoke;
+    color: #30a7d7;
+    border: 1.5px solid #30a7d7;
+  }
+}
+
+.ability {
+  min-height: 243px;
+  min-width: 350px;
+  background-color: #313131;
+  border-radius: 10px;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    color: #616161;
+    font-size: 1.2rem;
+    padding: 1.25em 1.5em 0.75em 1.25em;
+  }
+
+  &__name {
+    color: #f2f2f2;
+
+    text-transform: capitalize;
+    margin: 0 2.4rem;
+  }
+
+  &__desc {
+    color: #f2f2f2;
+    font-size: 1.6rem;
+    margin: 0 1.5em 2.5em;
+  }
+
+  &__close {
+    background: #000
+      url("../../assets/pokemons/close.png")
+      no-repeat left bottom;
+    border-radius: 0 10px 0 0;
+    cursor: pointer;
+    font-size: 1.2rem;
+
+    padding: 1.25em 1.5em 0.75em 1.25em;
+    color: #f2f2f2;
+  }
+}

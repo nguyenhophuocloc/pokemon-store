@@ -1,0 +1,139 @@
+@import "../../components/GlobalStyle/mixins";
+
+.comment__bg {
+  padding-top: 4rem;
+}
+
+.rate {
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  flex-wrap: wrap;
+
+  padding: 12px 12px;
+
+  &__left {
+    width: 50%;
+
+    @include Responsive(smartPhone) {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    width: 50%;
+
+    @include Responsive(smartPhone) {
+      margin-top: 3rem;
+      width: 100%;
+    }
+  }
+}
+
+.rate__progress {
+  display: flex;
+  align-items: center;
+}
+
+.progress {
+  &__name {
+    margin-right: 1rem;
+    min-width: 80px;
+    font-size: 1.4rem;
+  }
+
+  &__value {
+    margin-left: 1rem;
+    font-size: 1.4rem;
+  }
+}
+
+.comment__header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  & .comment__tabs {
+    width: 50%;
+    display: flex;
+
+    @include Responsive(smartPhone) {
+      margin-top: 3rem;
+      width: 100%;
+    }
+  }
+
+  & .comment__menu {
+    width: 50%;
+    display: flex;
+    //align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include Responsive(smartPhone) {
+      margin-top: 3rem;
+      width: 100%;
+    }
+  }
+}
+
+.comment__tab {
+  padding: 25px 0px;
+  margin-right: 2.5rem;
+  font-size: 1.4rem;
+
+  &:hover {
+    border-bottom: 2px solid #000;
+  }
+}
+
+.active__tab {
+  border-bottom: 2px solid #000;
+}
+
+.menu__control {
+  padding: 25px 0;
+}
+
+.menu__label {
+  font-size: 1.4rem;
+}
+
+.menu__select {
+  padding: 0.5rem;
+  margin-left: 6px;
+  font-weight: 600;
+  outline: none;
+}
+
+/*Comment of user*/
+.comment {
+  padding: 1.6rem 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.comment__hr {
+  margin: 0.5rem 0;
+}
+
+.comment__user {
+  font-size: 1.4rem;
+}
+
+.comment__content {
+  margin: 1rem 0;
+}
+
+.comment__img {
+  margin: 1rem 0;
+
+  & img {
+    height: 150px;
+    width: 150px;
+    margin-left: 0.5rem;
+  }
+}
+
+.comment__vote {
+  font-size: 1.4rem;
+}

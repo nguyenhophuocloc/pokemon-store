@@ -1,0 +1,221 @@
+@import "mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*--main-color: #ee4266;**/
+  --main-color: #ef4036;
+  --header-height: 7rem;
+  --main-font: "Fira Sans", sans-serif;
+  --normal-color: #aa9;
+  --fire-color: #f42;
+  --water-color: #39f;
+  --grass-color: #7c5;
+  --electric-color: #fc3;
+  --ice-color: #6cf;
+  --fighting-color: #b54;
+  --poison-color: #a59;
+  --ground-color: #db5;
+  --flying-color: #89f;
+  --psychic-color: #f59;
+  --bug-color: #ab2;
+  --rock-color: #ba6;
+  --ghost-color: #66b;
+  --dark-color: #754;
+  --dragon-color: #76e;
+  --steel-color: #aab;
+  --fairy-color: #e9e;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+.mg-t {
+  margin-top: 1.6rem;
+}
+
+.mg-t4 {
+  margin-top: 4rem;
+}
+
+.mg-t2 {
+  margin-top: 2rem;
+}
+.mg-b4 {
+  margin-bottom: 4rem;
+}
+.mg-b3 {
+  margin-bottom: 3rem;
+}
+.text-center {
+  text-align: center;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover,
+a:active {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+
+  @include Responsive(tablet) {
+    width: 94%;
+  }
+  @include Responsive(smartPhone) {
+    width: 94%;
+  }
+}
+
+.grid {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+
+  @include Responsive(tablet) {
+    margin: 0 -6px;
+  }
+
+  @include Responsive(smartPhone) {
+    margin: 0 -4px;
+  }
+}
+
+.col {
+  width: 20%;
+  padding: 24px 12px;
+  @include Responsive(tablet) {
+    width: calc(100% / 3);
+    padding: 12px 6px;
+  }
+  @include Responsive(smartPhone) {
+    width: 50%;
+    padding: 12px 4px;
+  }
+}
+
+.type {
+  &__icon {
+    margin-right: 1rem;
+    display: inline-block;
+    width: 66px;
+    background: #dbdbdb;
+    border: 1px solid #a3a3a3;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: opacity 0.4s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  }
+
+  &__normal {
+    background-color: var(--normal-color);
+  }
+
+  &__fire {
+    background-color: var(--fire-color);
+  }
+
+  &__water {
+    background-color: var(--water-color);
+  }
+
+  &__grass {
+    background-color: var(--grass-color);
+  }
+
+  &__electric {
+    background-color: var(--electric-color);
+  }
+
+  &__ice {
+    background-color: var(--ice-color);
+  }
+
+  &__fighting {
+    background-color: var(--fighting-color);
+  }
+
+  &__poison {
+    background-color: var(--poison-color);
+  }
+
+  &__ground {
+    background-color: var(--ground-color);
+  }
+
+  &__flying {
+    background-color: var(--flying-color);
+  }
+
+  &__psychic {
+    background-color: var(--psychic-color);
+  }
+
+  &__bug {
+    background-color: var(--bug-color);
+  }
+
+  &__rock {
+    background-color: var(--rock-color);
+  }
+
+  &__ghost {
+    background-color: var(--ghost-color);
+  }
+
+  &__dark {
+    background-color: var(--dark-color);
+  }
+
+  &__dragon {
+    background-color: var(--dragon-color);
+  }
+
+  &__steel {
+    background-color: var(--steel-color);
+  }
+
+  &__fairy {
+    background-color: var(--fairy-color);
+  }
+}
+

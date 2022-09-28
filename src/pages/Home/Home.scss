@@ -1,0 +1,62 @@
+@import "../../components/GlobalStyle/mixins";
+
+.home {
+  margin-top: var(--header-height);
+  height: 80vh;
+  background: url(../../assets/home/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  @include Responsive(smartPhone) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__slogan {
+    color: whitesmoke;
+    font-size: 3.4rem;
+    text-shadow: 3px 3px rgb(41, 29, 29);
+    animation: textFly 4s forwards;
+
+    @include Responsive(pc) {
+      position: absolute;
+      top: 25vh;
+      left: 10vh;
+    }
+
+    @include Responsive(tablet) {
+      position: absolute;
+      top: 25vh;
+      left: 10vh;
+    }
+
+    @include Responsive(smartPhone) {
+      // top:50%;
+      // left: 50%;
+      // transform: translate(-50%,-50%);
+      text-align: center;
+    }
+
+    & h3 {
+      color: whitesmoke;
+      font-weight: bold;
+    }
+
+    & p {
+      color: whitesmoke;
+      font-weight: 300;
+    }
+  }
+}
+
+@keyframes textFly {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

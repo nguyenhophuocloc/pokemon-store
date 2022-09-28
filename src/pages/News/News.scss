@@ -1,0 +1,123 @@
+@import "../../components/GlobalStyle/mixins";
+.news {
+  margin-top: var(--header-height);
+
+  &__content {
+    margin: 10rem 12.8rem;
+
+    @include Responsive(tablet) {
+      margin: 6rem 4rem;
+    }
+
+    @include Responsive(smartPhone) {
+      margin: 0rem 0rem;
+    }
+  }
+
+  &__tit {
+    padding-top: 4rem 0;
+    margin-bottom: 2rem;
+    color: #919191;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__img {
+    margin-bottom: 1rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__date {
+    font-size: 1rem;
+    color: var(--main-color);
+    margin: 0 0 0.5rem 0.5em;
+  }
+
+  &__tag {
+    margin: 0.05em 0 10px 0.5rem;
+    color: #919191;
+  }
+
+  &__title {
+    margin: 0.05em 0 0.5rem 0.5rem;
+  }
+
+  &__desc {
+    color: #919191;
+    margin: 0.05em 0 0.5rem 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  &__hr {
+    margin: 4rem auto;
+    border: 1px solid #30a8d6;
+  }
+
+  &__select {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 4rem;
+
+    & select {
+      width: 25%;
+      border-radius: 5px;
+      border: 1px solid var(--main-color);
+      outline: none;
+      background-color: var(--main-color);
+      color: #fff;
+      padding: 8px 0 8px;
+
+      @include Responsive(tablet) {
+        width: 50%;
+      }
+
+      @include Responsive(smartPhone) {
+        width: 100%;
+      }
+    }
+  }
+
+  /*Other cards*/
+  &__other {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.news__main .news__card {
+  width: 50%;
+  //margin: 1rem;
+  //min-width: 426px;
+  padding: 0 1rem 0;
+
+  &:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+  }
+
+  @include Responsive(smartPhone) {
+    width: 100%;
+  }
+}
+
+.news__other .news__card {
+  width: calc(100% / 3);
+  padding: 0 1rem 0;
+
+  &:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+  }
+
+  @include Responsive(smartPhone) {
+    width: 100%;
+  }
+}

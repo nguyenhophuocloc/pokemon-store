@@ -1,0 +1,55 @@
+@import "../../components/GlobalStyle/mixins";
+
+.login {
+  margin-top: var(--header-height);
+  display: flex;
+  justify-content: center;
+}
+
+.login__content {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding: 3rem 3.4rem;
+  width: 500px;
+  box-shadow: 0 0 1px 1px #e2dfdf;
+}
+
+.login__form {
+  border-radius: 5px;
+
+  @include Responsive(pc) {
+  }
+
+  & button {
+    width: 100%;
+    color: #fff;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    margin-top: 1rem;
+    cursor: pointer;
+    opacity: 0.8;
+    border: 1px solid var(--main-color);
+    font-size: 1.6rem;
+    padding: 4px;
+    margin-bottom: 2rem;
+  }
+}
+
+.login__icon {
+  margin: 10px;
+  & span {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 13px;
+    border-radius: 50%;
+  }
+}
+
+.login__res {
+  font-size: 1.6rem;
+}
+
+.register a {
+  color: var(--main-color);
+  text-decoration: underline;
+}
