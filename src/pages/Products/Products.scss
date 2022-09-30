@@ -65,10 +65,10 @@
     width: 180px;
     height: 180px;
 
-    // @include Responsive(smartPhone){
-    //   width: 100px;
-    //   height: 100px;
-    // }
+    @include Responsive(smartPhone){
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &__body {
