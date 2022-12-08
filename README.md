@@ -2,7 +2,7 @@
 
 Link: https://pokemon-store-tau.vercel.app/
 
-<p>Trang chủ</p>
+Trang chủ
 ![screencapture-pokemon-store-tau-vercel-app-2022-12-08-18_23_15](https://user-images.githubusercontent.com/49156369/206434606-39e44f4a-1267-4263-bdf0-f3f515cfed59.png)
 
 # Getting Started with Create React App
